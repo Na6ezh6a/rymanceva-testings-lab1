@@ -6,7 +6,7 @@ CONFIG -= app_bundle
 CONFIG += thread
 CONFIG -= qt
 
-QMAKE_CXXFLAGS += -Wall -Wextra -Werror
+QMAKE_CXXFLAGS += -Wall -Wextra -Werror -std=c++98
 QMAKE_CFLAGS += -Wall -Wextra -Werror
 
 # gcov
