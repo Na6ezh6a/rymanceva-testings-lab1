@@ -9,6 +9,11 @@ result solver(float a, float b, float c) {
     res.x1 = 0;
     res.x2 = 0;
 
+    if(a == 0 && b == 0 && c == 0) {
+        res.solves_number = -1;
+        return res;
+    }
+
     // считаем дискриминант
     float D = b*b - 4*a*c;
 
