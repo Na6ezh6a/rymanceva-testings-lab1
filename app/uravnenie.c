@@ -1,7 +1,7 @@
 #include <math.h> // для sqrt (кв. корень)
 #include "uravnenie.h" // прототип и структура result
 
-result solver(float a, float b, float c) {
+result solver(double a, double b, double c) {
     result res;
 
     // сначала мы считаем что у нас нет решений
@@ -28,7 +28,7 @@ result solver(float a, float b, float c) {
     }
 
     // считаем дискриминант
-    float D = b*b - 4*a*c;
+    double D = b*b - 4*a*c;
 
     // нет решений
     if(D < 0) {

@@ -7,12 +7,12 @@
 typedef struct _result {
     int solves_number;
 
-    float x1;
-    float x2;
+    double x1;
+    double x2;
 } result;
 
 // прототип функции для решения уравнения
 // a, b, c - коэфициенты кв. уравнения
-result solver(float a, float b, float c);
+result solver(double a, double b, double c);
 
 #endif // URAVNENIE_H

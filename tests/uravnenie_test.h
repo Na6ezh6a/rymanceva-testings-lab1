@@ -7,7 +7,7 @@ extern "C" {
 #include "uravnenie.h"
 }
 
-const float acc = 0.00001; // точность сравнения
+const double acc = 0.00001; // точность сравнения
 
 TEST(uravn_test1, suite1) {
     result res = solver(4, 8, 4);
