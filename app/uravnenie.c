@@ -9,8 +9,21 @@ result solver(float a, float b, float c) {
     res.x1 = 0;
     res.x2 = 0;
 
+    // бесконечное кол-во решений
     if(a == 0 && b == 0 && c == 0) {
         res.solves_number = -1;
+        return res;
+    }
+
+    // линейное уравнение
+    if(a == 0 && b != 0) {
+        res.solves_number = 1;
+        res.x1 = (-c) / b;
+        return res;
+    }
+
+    // нет решений
+    if(a == 0 && b == 0) {
         return res;
     }
 
