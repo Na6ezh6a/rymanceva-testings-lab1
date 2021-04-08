@@ -45,13 +45,13 @@ TEST(uravn_test3, suite1) {
     result res = solver(2, 2, -4);
     EXPECT_EQ(res.solves_number, 2);
     EXPECT_NEAR(res.x1, -2, acc);
-    EXPECT_NEAR(res.x1, 1, acc);
+    EXPECT_NEAR(res.x2, 1, acc);
 }
 TEST(uravn_test3, suite2) {
     result res = solver(-2, 2, 4);
     EXPECT_EQ(res.solves_number, 2);
     EXPECT_NEAR(res.x1, -1, acc);
-    EXPECT_NEAR(res.x1, 2, acc);
+    EXPECT_NEAR(res.x2, 2, acc);
 }
 
 TEST(uravn_test4, suite1) {
